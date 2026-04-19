@@ -25,5 +25,3 @@ The project is structured into modular components:
 ## 🎥 Demo
 ![Autonomous Navigation Demo](Media/A_Star_SLAM_EKF_Webots_GIF.gif)
 
----
-*Project archive for portfolio and personal reference. 🎓*
