@@ -23,7 +23,7 @@ The project is structured into modular components:
 * `AMR_main.py`: Controller for path execution and motor control in Webots.
 
 ## 🎥 Demo
-*The AMR performing the full autonomous pipeline: SLAM map generation followed by path-planned navigation with real-time obstacle avoidance.*
-![Autonomous Navigation Demo](assets/navigation_demo.gif)
+![Autonomous Navigation Demo](Media/A_Star_SLAM_EKF_Webots_GIF.gif)
+
 ---
 *Project archive for portfolio and personal reference. 🎓*
