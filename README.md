@@ -5,7 +5,7 @@ This repository contains the implementation of an autonomous mobile robot naviga
 ## 📝 About the Project
 This system enables an AMR to operate in unknown or dynamic environments. The navigation pipeline is divided into two main phases:
 1. **Mapping:** The robot explores the environment using LIDAR to build an occupancy grid map.
-2. **Autonomous Navigation:** Once the map is generated, the robot performs localization via sensor fusion to track its pose and executes pathfinding to reach specific targets while avoiding obstacles
+2. **Autonomous Navigation:** Once the map is generated, the user can define any target coordinates in the workspace. The robot then fuses sensor data to track its current pose and executes the A* pathfinding algorithm to reach the destination while dynamically avoiding obstacles.
 
 ## 🚀 Core Technologies
 * **Mapping (SLAM):** Real-time occupancy grid mapping.
