@@ -1,9 +1,13 @@
-# 🤖 AMR Navigation
+# 🤖 Autonomous AGV Navigation
 
 This repository contains the implementation of an autonomous mobile robot navigation system developed in **Webots**. The project covers the full navigation pipeline, from raw sensor data acquisition to autonomous path planning and execution.
 
-## 🚀 Core Technologies
+## 📝 About the Project
+This system enables an AMR to operate in unknown or dynamic environments. The navigation pipeline is divided into two main phases:
+1. **Mapping:** The robot explores the environment using LIDAR to build an occupancy grid map.
+2. **Autonomous Navigation:** Once the map is generated, the robot performs localization via sensor fusion to track its pose and executes pathfinding to reach specific targets while avoiding obstacles
 
+## 🚀 Core Technologies
 * **Mapping (SLAM):** Real-time occupancy grid mapping.
 * **Localization:** Extended Kalman Filter (EKF) for sensor fusion.
 * **Path Planning:** A* algorithm with dynamic obstacle avoidance.
@@ -18,10 +22,8 @@ The project is structured into modular components:
 * `SLAM.py`: Controller for SLAM and grid map generation.
 * `AMR_main.py`: Controller for path execution and motor control in Webots.
 
-## 🎥 Process Demonstration
-
-#### 📤 Storage Cycle (Load)
-The system identifies the box, applies the weight/height-safety rule, and selects the **nearest optimal slot** to minimize travel time.
-*![Load Cycle](Media/Load_GIF.gif)*
+## 🎥 Demo
+*The AMR performing the full autonomous pipeline: SLAM map generation followed by path-planned navigation with real-time obstacle avoidance.*
+![Autonomous Navigation Demo](assets/navigation_demo.gif)
 ---
 *Project archive for portfolio and personal reference. 🎓*
